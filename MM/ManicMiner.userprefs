@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="../Tools/Sprite2Images/Sprite2Images.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Tools/Sprite2Images/Program.cs">
+    <Files>
+      <File FileName="../Tools/Sprite2Images/Program.cs" Line="186" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

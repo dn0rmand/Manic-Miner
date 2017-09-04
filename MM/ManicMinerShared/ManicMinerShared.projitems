@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{7187ABEC-F6E0-4CF4-8E8C-481DBE6DA18B}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ManicMiner</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ManicMinerApplicationDelegate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\GameMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\GameData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\GameMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\GameWilly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\Willy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\Enums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\Robot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\Objects.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameCreditsLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameDemoLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameEndLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameOverLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\GamePianoLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\Label.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\Sounds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\Sprites.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\Touches.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\BaseGameLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\Menu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MM\Tags.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)MM\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Tools\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Scenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Scenes\GameLogoLayer.cs" />
+    <None Include="$(MSBuildThisFileDirectory)Scenes\GameTestLayer.cs" />
+  </ItemGroup>
+</Project>

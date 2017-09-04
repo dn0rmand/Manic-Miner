@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Settings</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>sound</string>
+			<key>Title</key>
+			<string>Sound</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>music</string>
+			<key>Title</key>
+			<string>Background Music</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>invincible</string>
+			<key>Title</key>
+			<string>Invincible</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>infiniteLives</string>
+			<key>Title</key>
+			<string>Infinite Lives</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>unlockDoors</string>
+			<key>Title</key>
+			<string>Unlock Doors</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>showAds</string>
+			<key>Title</key>
+			<string>Show Ads</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>stats</string>
+			<key>Title</key>
+			<string>Display Stats</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<!-- dict>
+			<key>DefaultValue</key>
+			<integer>4</integer>
+			<key>Key</key>
+			<string>GameSpeed</string>
+			<key>Title</key>
+			<string>Game Speed</string>
+			<key>Titles</key>
+			<array>
+				<string>BONKERS</string>
+				<string>SILLY</string>
+				<string>FAST</string>
+				<string>ORIGINAL</string>
+				<string>SPECCY</string>
+				<string>BORING</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+			</array>
+		</dict -->
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

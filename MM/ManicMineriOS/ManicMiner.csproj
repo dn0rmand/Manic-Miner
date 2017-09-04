@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F682923-EE76-4240-BBEB-56BF44B82A57}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ManicMiner</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ManicMiner</AssemblyName>
+    <CrashReportingApiKey>501f53d36d7ddb57917246f892f844a301c11e67</CrashReportingApiKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;IOS;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchProfiling>true</MtouchProfiling>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <MtouchExtraArgs>--setenv:MONO_GC_PARAMS=nursery-size=16m</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>Full</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <MtouchExtraArgs>--setenv:MONO_GC_PARAMS=nursery-size=16m</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>true</MtouchDebug>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchExtraArgs>--setenv:MONO_GC_PARAMS=nursery-size=16m</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchLink>Full</MtouchLink>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <MtouchExtraArgs>--setenv:MONO_GC_PARAMS=nursery-size=16m</MtouchExtraArgs>
+    <CodesignProvision>fac22e0f-dbd7-4de8-908f-c2fc078d64b1</CodesignProvision>
+    <CrashReportingEnabled>true</CrashReportingEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="CocosSharp">
+      <HintPath>..\packages\CocosSharp.iOS.1.2.1.0\lib\MonoTouch10\CocosSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\CocosSharp.iOS.1.2.1.0\lib\MonoTouch10\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\packages\CocosSharp.iOS.1.2.1.0\lib\MonoTouch10\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net">
+      <HintPath>..\packages\CocosSharp.iOS.1.2.1.0\lib\MonoTouch10\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\packages\CocosSharp.iOS.1.2.1.0\lib\MonoTouch10\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="box2d">
+      <HintPath>..\packages\CocosSharp.iOS.1.2.1.0\lib\MonoTouch10\box2d.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\Sounds\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <Compile Include="Main.cs" />
+    <None Include="packages.config" />
+    <Compile Include="AppDelegate+iAd.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <Import Project="..\ManicMinerShared\ManicMinerShared.projitems" Label="Shared" Condition="Exists('..\ManicMinerShared\ManicMinerShared.projitems')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Content\Sounds\tap.mp3" />
+    <BundleResource Include="Content\Sounds\die.mp3" />
+    <BundleResource Include="Content\Sounds\done.mp3" />
+    <BundleResource Include="Content\Sounds\final.mp3" />
+    <BundleResource Include="Content\Sounds\ingame.mp3" />
+    <BundleResource Include="Content\Sounds\jump.mp3" />
+    <BundleResource Include="Content\Sounds\options.mp3" />
+    <BundleResource Include="Content\Sounds\pick.mp3" />
+    <BundleResource Include="Content\Sounds\title.mp3" />
+    <BundleResource Include="Settings.bundle\Root.plist" />
+    <BundleResource Include="Content\gfx\16x16.png" />
+    <BundleResource Include="Content\gfx\font.png" />
+    <BundleResource Include="Content\gfx\fonts.png" />
+    <BundleResource Include="Content\gfx\logo.png" />
+    <BundleResource Include="Content\16x16.mask" />
+    <BundleResource Include="Content\Sounds\end-level.mp3" />
+    <BundleResource Include="Content\Sounds\falling.mp3" />
+    <BundleResource Include="Content\gfx\blocks.plist" />
+    <BundleResource Include="Content\gfx\16x16.plist" />
+    <BundleResource Include="Content\gfx\font.plist" />
+    <BundleResource Include="Content\gfx\fonts.plist" />
+    <BundleResource Include="Content\gfx\other.plist" />
+    <BundleResource Include="Content\gfx\other.png" />
+    <BundleResource Include="Content\Sounds\game-over.mp3" />
+    <BundleResource Include="Content\gfx\blocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-60.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-40.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-29.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-58.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-120.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-87.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-80.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-57.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-114.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-50.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-100.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-180.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-72.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-144.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-76.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon-152.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\img-640x960.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\img-768x1024.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\img-1024x768.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+</Project>
